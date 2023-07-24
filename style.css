@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+header{
+    height: 100%;
+    padding: 5px;
+    background-color: blanchedalmond;
+    background-attachment: fixed;
+}
+
+.nav-item {
+    list-style: none;
+    padding: 10px 5px 2px 5px;
+    font-size: x-large;
+    font: bolder;
+}
+
+.nav-link{
+    font-size: large;
+}
+
+.carousel {
+    min-height: 100%;
+}
+
+#Inicio{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 20;
+}
+
+#Inicio h1 {
+    padding-bottom: 15vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 8vw;
+    color: black;
+    text-shadow: 4px 4px 0 #abb7cf;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.container-cotizador{
+    box-sizing: border-box;
+    min-width: 40%;
+    padding: 0px 25px;
+    background-color: white;
+    background-attachment: fixed;
+    border-radius: 1rem;
+    margin: 10px 300px 10px 300px;
+    height: 100%;
+}
+
+.container-cotizador h1{
+    text-align: center;
+    font-size: 7vw;
+    padding: 20px;
+    color: black;
+}
+
+.abs-center {
+    margin: 15px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+}
+
+.col h1{
+    font-size: 5vw; 
+}
+
+.col p{
+    font-size: xx-large;
+}
+
+.col-12 {
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+
+.formulario-cotizador{
+    width: 60%;
+}
+
+.formulario-cotizador label {
+    display: block;
+    max-width: 100%;
+    font-size: 2vw;
+}
+
+.formulario-cotizador input {
+    display: block;
+    max-width: 100%;
+    font-size: 2vw;
+}
+
+.formulario-cotizador select {
+    display: block;
+    max-width: 100%;
+    font-size: 2vw;
+}
+
+.contenedor-texto {
+    margin-top: 15px; 
+    min-width: 50px;
+    max-width: 100%;
+    padding-bottom: 8px;
+}
+
+.formulario-cotizador button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: small;
+    border: none;
+    background: rgb(148, 146, 146);
+    position: relative;
+}
+
+.formulario-cotizador button .btn {
+    height: 50px;
+    padding: 30px 20px;
+    background-color: gray;
+    border-radius: 4px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: 0;
+}
+
+h4{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-decoration: underline;
+    font-size: large;
+}
+
+.table{
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #fdfef7;
+    margin: auto;
+}
+
+.table th {
+    max-width: 100%;
+    font-size: small; 
+}
+
+#Por-Que-Elegirnos{
+    /*background-color: rgb(251, 217, 222);*/
+    padding-bottom: 10vh;
+    background-image: url("images/imagen_4.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+}
+
+#Por-Que-Elegirnos h1 {
+    font-size: 8vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#Por-Que-Elegirnos h3{
+    font-size: 7vh;
+}
+
+p{
+    font-size: 5vh;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 100px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: opacity 0.3s;
+}
+
+#back-to-top:hover{
+    opacity: 0.8;
+}
+
+footer{
+    background-color: blanchedalmond;
+    padding-top: 40px;
+}
+
+footer p{
+    font-size: 3vh;
+
+}
+
+/* Media query para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .container-cotizador {
+        margin: 10px;
+        padding: 0;
+        min-width: auto;
+    }
+  
+    .formulario-cotizador {
+        width: 100%;
+    }
+
+    #Inicio h1 {
+        text-align: center;
+        font-size:5vw;
+        color: black;
+        text-shadow: 0.5px 0.5px 0 #abb7cf;
+        padding-bottom: 5vh;
+    }
+
+}
+
+/* Media query para pantallas de 769px a 960px */ 
+@media only screen and (min-width: 769px) and (max-width: 960px){
+    .container-cotizador {
+        margin: 10px;
+        padding: 0;
+        min-width: auto;
+    }
+  
+    .formulario-cotizador {
+        width: 80%;
+    }
+
+    #Inicio h1 {
+        text-align: center;
+        font-size:7vw;
+        color: black;
+        text-shadow: 0.5px 0.5px 0 #abb7cf;
+        padding-bottom: 5vh;
+    }
+
+    .col h1{
+        font-size:5vw;
+    }
+
+}
+
+/* Media query para pantallas de 961px a 1199px */ 
+@media only screen and (min-width: 961px) and (max-width: 1199px){
+    .container-cotizador {
+      margin: 10px;
+      padding: 0;
+      min-width: auto;
+    }
+  
+    .formulario-cotizador {
+      width: 60%;
+    }
+
+    #Inicio h1 {
+        text-align: center;
+        font-size:7vw;
+        color: black;
+        text-shadow: 0.5px 0.5px 0 #abb7cf;
+    }
+
+    .col h1{
+        font-size:5vw;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+
+    #Inicio h1 {
+        text-align: center;
+        font-size:5vw;
+        color: black;
+        text-shadow: 0.5px 0.5px 0 #abb7cf;
+    }
+
+    .formulario-cotizador {
+        width: 80%;
+    }
+
+    .col h1{
+        font-size:4vw;
+    }
+
+    .formulario-cotizador label {
+        display: block;
+        max-width: 100%;
+        font-size: 1vw;
+    }
+    
+    .formulario-cotizador input {
+        display: block;
+        max-width: 100%;
+        font-size: 1vw;
+    }
+    
+    .formulario-cotizador select {
+        display: block;
+        max-width: 100%;
+        font-size: 1vw;
+    }
+}
