@@ -2,4 +2,4 @@
 
 ### El objetivo es una web app que permita al usuario simular un prestamos personal, con amortizacion frances.
 
-#### El usuario podra ingresar monto del prestamo, cantidad de cuotas (meses) en los cuales quiere retornar ese prestamoo y por ultimo la tasa interes. Luego al presionar el boton de consultar, vera el desarrollo del prestamo.
+#### El usuario podra ingresar monto del prestamo, cantidad de cuotas (meses) en los cuales quiere retornar ese prestamo y por último la tasa interes.  Luego al presionar el boton de consultar, vera el desarrollo del préstamo.
